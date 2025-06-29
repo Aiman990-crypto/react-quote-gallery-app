@@ -15,7 +15,7 @@ function Gallery() {
         {
           params: { query, per_page: 12 },
           headers: {
-            Authorization: `Client-ID Og0dTPp9kEaQTwF_G-88G4BTd8dboQuzRnCN31VaiPM`
+            Authorization: `Client-ID ${process.env.REACT_APP_UNSPLASH_ACCESS_KEY}`
           }
         }
       );
